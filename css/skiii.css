@@ -1,0 +1,202 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            margin-bottom: 2rem;
+        }
+        form input, form select, form textarea, form button {
+            width: 100%;
+            margin: 0.5rem 0;
+            padding: 0.8rem;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        form button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+        /* Navbar Styles */
+
+nav {
+    background-color: #2f98ac; /* Dark background for the navbar */
+    font-family: 'Arial', sans-serif;
+    padding: 10px 10px;
+    position: sticky; /* Make the navbar sticky at the top */
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navbar items */
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px; /* Space out the items */
+}
+
+nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underlines */
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #1e90ff; /* Blue background on hover/focus */
+    color: #fff; /* White text on hover */
+}
+
+nav ul li a.active {
+    background-color: #1e90ff; /* Active link styling */
+    color: #fff; /* White text */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        width: 100%; /* Full width for each item */
+        text-align: left;
+        padding: 12px 20px;
+    }
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: 'Arial', sans-serif;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #1e90ff; /* Light blue color for links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 15px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+.about-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.about-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-container {
+    width: 40%;
+    text-align: center;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+    width: 55%;
+    padding: 20px;
+}
+
+.text-container h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
